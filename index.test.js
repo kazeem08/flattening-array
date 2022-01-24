@@ -16,6 +16,14 @@ test("Returns flattened array for an array with one element", () => {
     expect(flatten([1])).toEqual([1]);
 });
 
-test("Returns flattened array for an array with one element", () => {
+test("Returns empty array for when input is an empty array", () => {
     expect(flatten([])).toEqual([]);
+});
+
+test("Returns flattened array for an array that contains negative element", () => {
+    expect(flatten([-1, 2, [[3], 4, [5, 6, [7]]]])).toEqual([-1, 2, 3, 4, 5, 6, 7]);
+});
+
+test("Returns flattened array for an array that contains mixture of strings and numbers", () => {
+    expect(flatten(['a', 'b', ['c', [ 1, 3, 4]]])).toEqual(['a', 'b', 'c', 1, 3, 4]);
 });
