@@ -5,7 +5,7 @@ This is an algorithm to flatten an arbitrarily nested array of values
 
 ## Running Locally
 ```bash
-git clone https://github.com/kazeem08/flattening-array.git.git
+git clone https://github.com/kazeem08/flattening-array.git
 ```
 ```bash
 cd flattening-array
