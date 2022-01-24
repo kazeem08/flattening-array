@@ -11,6 +11,11 @@
             return 'input should be of type array';
         }
 
+        //check if array is empty
+        if(!input.length){
+            return input;
+        }
+
         const flattenedArray = input.reduce((previousElement, currentElement) => {
 
             // check type of current element
