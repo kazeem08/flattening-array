@@ -14,5 +14,5 @@ cd flattening-array
 npm install or npm i
 ```
 ```bash
-npm run test (To run test) 
+npm run test 
 ```
